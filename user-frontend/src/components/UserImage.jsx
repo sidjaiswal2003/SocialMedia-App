@@ -8,7 +8,7 @@ const UserImage=({image,size="60px"})=>{
             width={size}
             height={size}
             alt="user"
-            src={`http://localhost:8080/assets/${image}`} ></img>
+            src={`https://my-book-backend.onrender.com/assets/${image}`} ></img>
         
 
         </Box>
