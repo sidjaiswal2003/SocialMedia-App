@@ -16,10 +16,7 @@ export const getUserFriends=async(req,res)=>{
     try {
         const {id}=req.params
         const user=await User.findById(id)
-        // const friends=await Promise.all(  //we making multiple calls to backend
-        //     user.friends.map((id)=>{
-        //     User.findById(id)
-        // }))
+        
         const friends = await Promise.all(
             user.friends.map(async (id) => {
               return await User.findById(id);

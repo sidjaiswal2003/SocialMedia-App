@@ -7,9 +7,7 @@ Welcome to our full-stack social media app! This application allows users to con
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -50,8 +48,8 @@ Follow these steps to set up and run the application locally:
 3-Create a .env file in the backend folder and add the following environment variables:
 
 PORT=
-MONGO_URI=your-mongodb-connection-string
-JWT_SECRET=your-jwt-secret
+MONGO_URI=your-mongo-uri
+JWT_SECRET=your jwt key
 
 4-Install the project dependencies for both the backend and the user-frontend:
 

@@ -50,9 +50,3 @@ const userSchema = new mongoose.Schema({
  export default User
 
 
-//  const user=new mongoose.Schema({
-//     s:{
-
-//     }
-//  })
-//  const user=mongoose.model('user',userSchema)

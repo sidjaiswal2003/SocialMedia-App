@@ -85,6 +85,3 @@ export default createPost
 
 
 
-// export const getfeedpost=async (req,res)=>{
-//     const post=await Post.find()
-// }
