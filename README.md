@@ -43,35 +43,35 @@ Welcome to our full-stack social media app! This application allows users to con
 
 Follow these steps to set up and run the application locally:
 
-Fork this repository so that you have your own copy of the repository linked to your own github account.
+1-Fork this repository so that you have your own copy of the repository linked to your own github account.
 
-Clone your forked copy to your local machine by going to the folder where you want to setup the project and then typing in the terminal/cmd git clone https://github.com/<your-username>/SocialMedia-App.git or if confused, copy the link from the green CODE button on the Code tab of your repository.
+2-Clone your forked copy to your local machine by going to the folder where you want to setup the project and then typing in the terminal/cmd git clone https://github.com/<your-username>/SocialMedia-App.git or if confused, copy the link from the green CODE button on the Code tab of your repository.
 
-Create a .env file in the backend folder and add the following environment variables:
+3-Create a .env file in the backend folder and add the following environment variables:
 
 PORT=
 MONGO_URI=your-mongodb-connection-string
 JWT_SECRET=your-jwt-secret
 
-Install the project dependencies for both the backend and the user-frontend:
+4-Install the project dependencies for both the backend and the user-frontend:
 
-# Install backend dependencies
+Install backend dependencies
 cd backend 
 npm install
 
-# Install frontend dependencies
+Install frontend dependencies
 cd user-frontend 
 npm install
 
-Run the Application:
+5-Run the Application:
 
-# In the backend directory
+In the backend directory
 npm start
 
-# In the user-frontend directory
+In the user-frontend directory
 npm start
 
-In order to close the program press ctrl+c in the same terminal/cmd.
+6-In order to close the program press ctrl+c in the same terminal/cmd.
 
 
 
