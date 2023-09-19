@@ -40,7 +40,7 @@ import {
   
     const patchLike = async () => {
       
-      const response = await fetch(`https://my-book-backend.onrender.com/posts/${postId}/like`, {
+      const response = await fetch(`http://localhost:3000/posts/${postId}/like`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -70,7 +70,7 @@ import {
             height="auto"
             alt="post"
             style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-            src={`https://my-book-backend.onrender.com/assets/${picturePath}`}
+            src={`http://localhost:3000/assets/${picturePath}`}
           />
         )}
         <FlexBetween mt="0.25rem">

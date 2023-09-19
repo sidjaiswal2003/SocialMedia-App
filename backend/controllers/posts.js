@@ -34,6 +34,7 @@ export const getFeedPosts=async(req,res)=>{
     try {
          const post=await Post.find()
          res.status(200).json(post)
+       
         
     } catch (error) {
         res.status(404).json({msg:error.message})
@@ -84,6 +85,6 @@ export default createPost
 
 
 
-export const getfeedpost=async (req,res)=>{
-    const post=await Post.find()
-}
+// export const getfeedpost=async (req,res)=>{
+//     const post=await Post.find()
+// }
