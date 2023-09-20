@@ -1,4 +1,4 @@
-# Pokedex Contributing Guide
+# SOCIAL MEDIA WEBSITE Contributing Guide
 
 ### Imposter Syndrome Disclaimer (Must Read)
 We want your help. No really, we do.
