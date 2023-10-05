@@ -49,7 +49,7 @@ export const getUserPosts=async(req,res)=>{
         if(post.length === 0) { 
             return res.status(400).json({
                 success: false, 
-                message : "No Blogs Exists" 
+                message : "No Post Exists" 
             })
         }
 
