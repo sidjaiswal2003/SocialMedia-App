@@ -42,11 +42,17 @@ export const getFeedPosts=async(req,res)=>{
     }
 }
 export const getUserPosts=async(req,res)=>{
-    console.log("H")
+
     try {
         const {userId}=req.params //Come from Query string
-        const post=await Post.find({userId})
-        console.log(post)
+        const post=await Post.find({userId}) 
+        if(post.length === 0) { 
+            return res.status(400).json({
+                success: false, 
+                message : "No Blogs Exists" 
+            })
+        }
+
         res.status(200).json({post})
 
     } catch (error) {
@@ -60,7 +66,6 @@ export const likePost=async(req,res)=>{
         const {id}=req.params
         const {userId}=req.body
         const post=await Post.findById(id)
-        console.log(post)
         if (!post.likes) {
             post.likes = {[userId]: true}
         } else {

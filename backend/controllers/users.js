@@ -55,7 +55,7 @@ export const addRemoveFriends=async(req,res)=>{
         }
         await user.save()
         await friend.save()
-       //console.log(friend)
+
         
        const friends = await Promise.all(
         user.friends.map(async (id) => {
@@ -68,7 +68,7 @@ export const addRemoveFriends=async(req,res)=>{
                 return {_id,firstName,lastName,occupation,location ,picturePath}
             }
         )
-        console.log(formttedFriends)
+
         res.status(200).json(formttedFriends)
 
         
